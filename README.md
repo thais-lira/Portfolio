@@ -12,7 +12,7 @@ Atualmente, estou desenvolvendo experiência em projetos pessoais com tecnologia
 
 ## Projetos Destacados
 
-### [Nome do Projeto 1]
+### Portfólio Pessoal
 
 Descrição: Portfólio pessoal para apresentar de forma eficaz minha experiência, habilidades e projetos relevantes. Utilizei técnicas de design responsivo para garantir uma experiência consistente em diferentes dispositivos.
 
