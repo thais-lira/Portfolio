@@ -1,0 +1,490 @@
+/*
+----- Table of coments -----
+---> Global setting 
+---> Fonts
+---> Header 
+---> First Section 
+---> Section About me
+---> About me 
+---> Section portfólio 
+---> Footer 
+-----------------------------------
+*/
+
+/*
+---------------------
+# Global setting
+---------------------
+*/
+
+:root{
+--primary-color: #626262;
+--secondary-color:#424242;
+--tertiary-color:#212121;
+--light-color:#E0E0E0;
+--dark-color:#343434;
+--variation-color: rgb(110, 108, 231);
+}
+
+body{
+  background: var(--dark-color);
+  overflow-x: hidden;
+}
+
+/* 
+  ------------
+  Scrollbar
+  ------------
+*/
+body::-webkit-scrollbar {
+  width: 12px;              
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--primary-color);    
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--variation-color);  
+  border-radius: 20px;     
+}
+
+.container-img{
+  display: flex;
+  justify-content: center;
+}
+
+/*
+  ----------
+  Fonts
+  ----------
+*/
+
+/*font-family: 'Montserrat', sans-serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Licorice&family=Montserrat:wght@800&display=swap');
+
+
+
+/*
+  ----------
+  Header
+  ----------
+*/
+
+#topbar{
+  padding: 0.30rem 0;
+  background-color: #292828;
+}
+
+.social-links{
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links i, .contact-info i{
+  color: var(--primary-color);
+  font-size: 1rem;
+}
+
+.social-links i:hover{
+  color: var(--light-color);
+}
+
+.contact-info a{
+  margin-left: 0.5rem;
+}
+
+.navbar-toggler{
+  background-color: var(--light-color);
+}
+
+#header{
+  background-color: var(--tertiary-color);
+}
+
+#header img{
+  width: 8rem;
+}
+
+.nav-link{
+  color: var(--light-color);
+  cursor: pointer;
+  position: relative;
+  font-size: 1.2em; 
+}
+
+.navbar-nav a:hover{
+  color: var(--light-color);
+}
+
+.navbar-nav a::before{
+ content: "";
+ position: absolute;
+ bottom: 5px;
+ height: 1px;
+ width: 0;
+ background: var(--variation-color);
+ border-radius: 50px;
+ transition: width .5s ease;
+}
+
+.navbar-nav a:hover::before{
+  width: 90%; 
+}
+
+/*
+  ----------------
+  First Section
+  -----------------
+*/
+.box-text {
+padding: 4rem 1em  2em 1em ;
+}
+
+.first-section--title{
+  color: var(--variation-color);
+  font-weight: bold;
+  letter-spacing: 0.8rem;
+  font-size: 2rem;
+}
+
+.first-section--text{
+  font-size: 1.1em;
+}
+
+#hard-skills{
+  background-color: var(--secondary-color);
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+#hard-skills .fa-brands{
+  font-size: 4em;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.first-section--image{
+  width: 15rem;
+}
+
+/*button*/
+#firstsection .box-btn{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.box-btn .btn-primary{
+  background-color: var(--primary-color);
+  border: none;
+  padding: 0.8rem;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.box-btn .btn-primary:hover{
+  background-color:var(--variation-color);
+}
+
+  
+/*Medium*/
+@media only screen and (min-width: 48rem) {
+  #firstsection h1{
+    font-size: 3rem;
+  }
+  
+  #firstsection p {
+    font-size: 1.4em;
+  }
+
+  #firstsection img {
+    width: 20rem;
+  }
+}
+
+/*Large*/
+@media only screen and (min-width: 62rem) {
+
+  .box-btn .btn-primary{
+    padding: 0.8rem 1rem;
+    width: 30%;
+  }
+
+  #hard-skills .fa-brands{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #firstsection img {
+    width: 30rem;
+  }
+}
+
+/*
+  -------------
+  about me
+  -------------
+*/
+
+.about-me--text{
+  font-size: 1.2em;
+}
+
+.about-me--title{
+  color: var(--variation-color);
+  font-weight: bolder;
+  font-size: 1.6em;
+}
+
+.about-me--image{
+  width: 20rem;
+  margin-top: 2rem;
+}
+
+/*  Button*/
+#about-me .btn-primary{
+  border: 2px solid var(--variation-color);
+  background-color: transparent;
+  height: 2.8rem;
+  width: 10rem;
+  font-size: 1.3em;
+  transition: all .5s;
+  border-radius: 0;
+  font-weight: 500;
+}
+
+#about-me .btn-primary:hover{
+  border: 2px dashed var(--variation-color);
+}
+
+/*Large*/
+@media only screen and (min-width: 62rem) {
+  #about-me{
+    min-height: 80vh;  
+    display: flex;
+    align-items: center;
+  }
+
+  .about-me--title{
+    font-size: 2em;
+    margin-bottom: 1rem;
+  }
+
+ .about-me--image{
+    margin-top: 0;
+    width: 18rem;
+    float: right;
+  }
+
+  /*Button*/
+  #about-me .btn-primary{
+    margin-top: 0;
+  }
+}
+
+/*
+  -----------------------
+  Section about me
+  -----------------------
+*/
+
+.s-about-me--title, .hard-skills--title{
+  color: var(--variation-color);
+  font-weight: 700;
+  margin-bottom: 1.5rem
+}
+
+.s-about-me--text{
+  font-size: 1.1em;
+}
+
+.s-about-me--image{
+  width: 20rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+#skills-summary{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.summary-item{
+  text-align: center;
+}
+
+.skills-summary--title{
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+#skills-summary .fa-brands{
+  color: #747272;
+  font-size: 3rem;
+}
+
+
+/*Medium*/
+@media only screen and (min-width: 48rem) {
+  #skills-summary{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+}
+
+/*Large*/
+@media only screen and (min-width: 62rem) {
+  #skills-summary{
+    display: flex;
+    gap: 5rem;
+    text-align: center;
+  }
+  .s-about-me--image{
+    width: 35rem;
+    height: 35rem;
+  }
+
+  
+}
+
+/*
+  ----------------------
+  Section portfolio
+  ----------------------
+*/
+
+#section-portfolio{
+  padding: 5rem 0.3rem ;
+  background-color: var(--secondary-color);
+  position: relative;
+}
+
+.s-portfolio--title{
+  font-size: 3em;
+  text-align: center;
+  color: var(--light-color);
+  margin-bottom: 2rem;
+  letter-spacing: 0.5rem;
+  letter-spacing: 0.3em;
+  font-weight: bolder;
+}
+
+.portfolio-item-single {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+  border-radius: 0.3rem; 
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.603);
+}
+
+.portfolio-item-single img {
+	width: 100%;
+  min-height: 20rem;
+}
+
+/*Shape divider*/
+.custom-shape-divider-top-1698723077 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1698723077 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+}
+
+.custom-shape-divider-top-1698723077 .shape-fill {
+  fill: #343434;
+}
+
+/*buttons*/
+.projects-btn{
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+}
+
+.projects-btn a {
+	padding: 1rem;
+	display: inline-block;
+	color: var(--tertiary-color);
+	font-size: 1em;
+  background-color: var(--light-color); 
+}
+
+.projects-btn a:hover{
+  opacity: 0.5;
+}
+
+/*
+  ---------
+  Footer
+  ---------
+*/
+#footer{
+  background: var(--tertiary-color);
+  padding-top: 2rem;
+}
+
+.footer--text{
+  margin-top: 1rem;
+}
+
+.footer--image{
+  width: 10rem;
+}
+
+.footer--social-icon{
+  font-size: 2em;
+  margin-right: 1rem;
+  color: var(--primary-color);
+  transition: .5s;
+}
+
+.footer--social-icon:hover{
+  color: var(--variation-color);
+}
+
+#footer-bottom{
+  border-top: 1px solid #62626281;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.f-bottom--text{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Button refreshing page on click*/
+#btn-return{
+  display: flex;
+  justify-content: end;
+}
+
+.btn-return--link{
+  background-color: var(--variation-color);
+}
+
+.btn-return--link:hover{
+  background-color: var(--primary-color);
+}
+
+#btn-return .fa-arrow-up{
+  color: var(--light-color);
+  font-size: 2em;
+  padding: 1rem;
+}
