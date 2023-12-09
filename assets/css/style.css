@@ -414,7 +414,25 @@ padding: 4rem 1em  2em 1em ;
 }
 
 .text-project{
-  height: 20rem;
+  min-height: 20rem;
+}
+
+.img-project{
+  height: 15rem;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width:48rem){
+  .img-project{
+    height: 25rem;
+  }
+}
+
+@media (min-width:77.5rem){
+  .img-project{
+    height: 18rem;
+  }
 }
 
 #image-project-01{
@@ -449,7 +467,7 @@ padding: 4rem 1em  2em 1em ;
   color: var(--variation-color);
 }
 
-@media (min-width:68rem){
+@media (min-width:77.5rem){
   #section-portfolio{
     padding: 5rem;
     background-color: var(--secondary-color);
