@@ -446,7 +446,9 @@ padding: 4rem 1em  2em 1em ;
 #image-project-03{
   background: url("/assets/image/projects/mecanica.png") no-repeat center/contain;
 }
-
+#image-project-04{
+  background: url("/assets/image/projects/calc.png") no-repeat center/contain;
+}
 
 /*buttons*/
 .project-btn{
