@@ -45,5 +45,5 @@ Se você encontrar algum problema ou tiver sugestões para melhorar meus projeto
 
 ## Agradecimentos
 
-Agradeço por visitar meu portfólio! Fique à vontade para explorar meus projetos e entrar em contato se tiver alguma pergunta ou oportunidade de colaboração.
+Agradeço por visitar meu portfólio!! Fique à vontade para explorar meus projetos e entrar em contato se tiver alguma pergunta ou oportunidade de colaboração.
 
